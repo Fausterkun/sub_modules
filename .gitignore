@@ -1,0 +1,35 @@
+# Django #
+*.log
+*.pot
+*.pyc
+#*.json
+__pycache__/
+*/__pycache__/
+.vscode/
+db.sqlite3
+media
+.coverage
+.idea/ 
+bin/
+lib64
+staticfiles/
+
+
+# venv variables
+.env
+htmlcov
+pyvenv.cfg
+study_core_env/
+
+# heroku procfile file for windows emulator:
+Procfile.windows
+
+# Backup files #
+*.bak
+
+# User-specific stuff
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
