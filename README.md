@@ -16,6 +16,11 @@
 		<div>(*) Terminal cmd for create symbolic link to your machine for quick run it from anywhere:
 			ln --symbolic /[abs_path_to_script]/pycharm ~/.local/bin/[your_quick_run_script_name]</div>
 	</li>
+	<li>
+		psql_docker_start - Start Postgres client in container
+		<dir>Default settings 
+			<dir>host/container ports: 5432 ,username: test, password: test, database name: test_db</dir>
+		</dir>
 	</ol>
 <h3>Plans: </h3>
 	<ul>
