@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Input your abs path to pycharm.sh. 
+# Example: path_to_sh_script="/home/username/pycharm/pycharm/pycharm-2022.2.2/bin/pycharm.sh"
+path_to_sh_script="<INPUT HERE ABS PATH TO pycharm.sh>"
+
+
+if [ ! $# -eq 0 ]
+	then 
+		echo run pycharm for dirrectory: $1 
+		nohup sh $path_to_sh_script $1 >> /dev/null &
+else
+	echo run pycharm
+	nohup sh $path_to_sh_script >> /dev/null &
+fi
