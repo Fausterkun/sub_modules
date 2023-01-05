@@ -29,3 +29,6 @@
 		.ssh_config - My ssh config file for quick setup on new servers.
 		( path for it at: '~/.ssh/config'  and '/etc/ssh/ssh_config' )
 	</li>
+	<li>
+		Nautilus (file browser) opening script
+	</li>
