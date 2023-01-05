@@ -19,7 +19,6 @@ staticfiles/
 .env
 htmlcov
 pyvenv.cfg
-study_core_env/
 
 # heroku procfile file for windows emulator:
 Procfile.windows
