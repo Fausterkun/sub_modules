@@ -21,6 +21,10 @@
 		<dir>Default settings 
 			<dir>host/container ports: 5432 ,username: test, password: test, database name: test_db</dir>
 		</dir>
+	</li>
+	<li>
+		.vimrc - my .vimrc seting file for vim 
+		<dir> Setup: copy file in user home dir example: cp path_to_this_file ~/
 	</ol>
 <h3>Plans: </h3>
 	<ul>
