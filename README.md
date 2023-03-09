@@ -25,6 +25,9 @@
 	<li>
 		.vimrc - my .vimrc seting file for vim 
 		<dir> Setup: copy file in user home dir example: cp path_to_this_file ~/
+    <li>
+        cpp_create_setupfiles - Create Makefile, test.cpp, solution.cpp and solution.hpp files with setup.
+    </li>
 	</ol>
 <h3>Plans: </h3>
 	<ul>
