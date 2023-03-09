@@ -1,0 +1,34 @@
+#!/bin/bash
+echo -e """
+all: 
+\t@echo "run - create main file if it exists" 
+\t@echo "test - create test_program file for solution test"   
+\t@echo "clear - clear test an main porgram"
+run:
+\tg++ main.cpp solution.hpp -o test_program
+
+test: 
+\tg++ test.cpp solution.hpp -o test_program
+clear:
+\trm -rf *.o test_program
+""" > Makefile
+
+
+cat > test.cpp << EOF
+#include "solution.hpp" 
+
+int main(){
+   
+    return 0;
+};
+EOF
+
+cat > solution.hpp << EOF
+#ifndef SOLUTION_STEPIK_HPP
+#define SOLUTION_STEPIK_HPP
+
+
+#endif 
+EOF
+
+touch solution.cpp 
