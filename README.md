@@ -10,7 +10,7 @@
 	</li>
 	<li> 
 		pycharm - A script that helps you call pycharm in a background task in one call without annoying log messages in your current terminal.
-        <div>(!) Must be setuped. Open script file and input you abs path to pycharm run script. </div>
+        <div>(!) After load open script file and input you abs path to pycharm run script. </div>
 	</li>
 	<li>
 		psql_docker_start - Start Postgres client in container
