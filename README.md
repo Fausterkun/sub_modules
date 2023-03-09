@@ -19,12 +19,12 @@
 	</li>
 	<li>
 		<div>.vimrc - My config file for vim.</div>
-		<div> Setup: copy file in user home dir example: "cp path_to_this_file ~/" </div>
+		<div>Setup: copy file in user home dir example: "cp path_to_this_file ~/" </div>
 	<li>
 		cpp_create_setupfiles - Create Makefile, test.cpp, solution.cpp and solution.hpp files with setup.
 	</li>
 	<li>
-		<div>.venv-activate - Find python virtual env folder in current dirrectory and activate it</div>
+		<div>venv-activate - Find python virtual env folder in current dirrectory and activate it</div>
 		<div> (!) after create symbolic link for this script you must call it using "source" cmd before script name 
 			<div>For example: "source venv-activate" </div>
 		</div>
