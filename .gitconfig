@@ -1,0 +1,17 @@
+[user]
+	name =  # INPUT GIT NAME
+	email =  # INPUT GIT EMAIL
+
+[core]
+	editor = vim
+
+[alias]
+	tree = log --graph --oneline --decorate --all
+	la = log --oneline --all
+	l = log --oneline 
+
+	s = status
+	b = branch
+
+[init]
+	defaultBranch = master
