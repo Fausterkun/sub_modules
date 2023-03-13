@@ -5,6 +5,10 @@
 	<li>
 		.gitignore - Standard gitignore file for most python/django projects
 	</li>
+	<li>
+		.gitconfig - My gitconfig files with alices. 
+        <div> (!) Need to setup: copy files to ~/ and input name and email in file. </div>
+	</li>
 	<li> 
 		docker-restart-all - Stops and restart all current working docker containers.
 	</li>
