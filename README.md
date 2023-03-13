@@ -2,6 +2,7 @@
 
 <h3>Modules: </h3>
 	<ol>
+	<h4> Files: </h4>
 	<li>
 		.gitignore - Standard gitignore file for most python/django projects
 	</li>
@@ -9,6 +10,11 @@
 		.gitconfig - My gitconfig files with alices. 
         <div> (!) Need to setup: copy files to ~/ and input name and email in file. </div>
 	</li>
+	<li>
+		<div>.vimrc - My config file for vim.</div>
+		<div>Setup: copy file in user home dir example: "cp path_to_this_file ~/" </div>
+	</li>
+	<h4> Scripts: </h4>
 	<li> 
 		docker-restart-all - Stops and restart all current working docker containers.
 	</li>
@@ -22,9 +28,6 @@
 			<dir>host port: 5432, container port: 5432 ,username: test, password: test, database name: test_db</dir>
 		</dir>
 	</li>
-	<li>
-		<div>.vimrc - My config file for vim.</div>
-		<div>Setup: copy file in user home dir example: "cp path_to_this_file ~/" </div>
 	<li>
 		cpp_create_setupfiles - Create Makefile, test.cpp, solution.cpp and solution.hpp files with setup.
 	</li>
