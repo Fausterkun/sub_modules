@@ -5,4 +5,4 @@ docker run \
 	-e POSTGRES_USER=test\
 	-e POSTGRES_PASSWORD=test\
 	-e POSTGRES_DB=test_db\
-	-d test_postgres
+	-d postgres:latest
