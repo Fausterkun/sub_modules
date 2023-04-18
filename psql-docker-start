@@ -1,6 +1,7 @@
 #!/bin/bash
-docker run \
-	--name test\
+docker stop test_postgres || true
+docker run --rm \
+	--name test_postgres \
 	-p 5432:5432 \
 	-e POSTGRES_USER=test\
 	-e POSTGRES_PASSWORD=test\
