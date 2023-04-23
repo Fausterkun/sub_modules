@@ -1,7 +1,9 @@
 #!/bin/bash
-docker stop test_postgres || true
+CONTAINER_NAME=test_postgres
+
+docker stop $CONTAINER_NAME || true
 docker run --rm \
-	--name test_postgres \
+	--name $CONTAINER_NAME \
 	-p 5432:5432 \
 	-e POSTGRES_USER=test\
 	-e POSTGRES_PASSWORD=test\
