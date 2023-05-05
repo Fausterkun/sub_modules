@@ -7,6 +7,7 @@
 
 [alias]
 	tree = log --graph --oneline --decorate --all
+	t = log --graph --oneline --decorate --all
 	la = log --oneline --all
 	l = log --oneline 
 
@@ -14,4 +15,4 @@
 	b = branch
 
 [init]
-	defaultBranch = master
+	defaultBranch = main
