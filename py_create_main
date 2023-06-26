@@ -14,7 +14,7 @@ while [ -e "$filename" ];do
 done
 
 cat > "$filename" << EOF 
-from datetime import datetime 
+from datetime import datetime
 from functools import wraps
 
 
