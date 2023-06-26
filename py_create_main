@@ -1,6 +1,19 @@
 #!/bin/bash
+if [$# -eq 0]; then
+    echo "No filename provided. main.py will used"
+    $filename = "main.py"
+else
+    $filename = "$1"
+fi
 
-cat > main.py << EOF 
+counter=1
+
+while [ -e "$filename" ];do
+    filename="${filename%.*}$counter.py"
+    coutner=$((counter+1))
+done
+
+cat > "$filename" << EOF 
 from datetime import datetime 
 from functools import wraps
 
@@ -28,4 +41,4 @@ if __name__ == '__main__':
     main()
 EOF
 
-
+echo "File '$filename' created"
