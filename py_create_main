@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cat > main.py << EOF 
-from datetime import datetime 
+from datetime import datetime
 from functools import wraps
 
 
