@@ -1,0 +1,31 @@
+#!/bin/bash
+
+cat > main.py << EOF 
+from datetime import datetime 
+from functools import wraps
+
+
+def count_running_time(func):
+    @wraps(func)
+    def wrapper(*args, **kwargs):
+        start_time = datetime.now()
+        res = func(*args, **kwargs)
+        end_time = datetime.now()
+        print('Running time: ', end_time - start_time)
+        return res
+    return wrapper
+
+
+def test():
+    pass
+
+
+def main():
+    pass
+
+
+if __name__ == '__main__':
+    main()
+EOF
+
+
