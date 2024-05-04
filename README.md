@@ -12,7 +12,7 @@ This repository contains a collection of scripts and files that can be useful fo
 
 * `docker-restart-all`: This script stops and restarts all currently running Docker containers.
 * `pycharm`: This script launches PyCharm in the background without displaying any annoying log messages in your current terminal. To use it, open the script file and enter the absolute path to your PyCharm installation.
-* `postgresql_docker_start`: This script starts a Postgres client in a Docker container using the default settings. The host port is set to `5432`, the container port is set to `5432`, the username is `test`, the password is `test`, and the database name is `test_db`.
+* `postgresql_docker_start`: This script starts a Postgres client in a Docker container using the default settings. The host port is set to `5432`, the container port is set to `5432`, the username is `postgres`, the password is `postgres`, and the database name is `test_db`.
 * `cpp_create_setupfiles`: This script creates a Makefile, a `test.cpp` file, a `solution.cpp` file, and a `solution.hpp` file for a C++ project.
 * `activate-venv`: This script finds the Python virtual environment folder in the current directory and activates it. To use it, create a symbolic link to the script in your `~/.local/bin/` directory and run it using the `source` command. For example: `source venv-activate`.
 
