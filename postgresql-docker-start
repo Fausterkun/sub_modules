@@ -1,0 +1,28 @@
+CONTAINER_NAME=postgresql
+DEFAULT_NAME=test_db
+USER_NAME=postgres
+PASSWORD=postgres
+
+read -p "Enter db name (Default: '$DEFAULT_NAME'): " DBNAME
+
+# Check if user input is not empty
+if [ -z "$DBNAME" ]; then
+	echo "db name setup to default '$DBNAME' to '$DEFAULT_NAME' "
+	DBNAME=$DEFAULT_NAME
+fi
+
+docker stop $CONTAINER_NAME || true
+docker run --rm \
+	--name $CONTAINER_NAME \
+	-p 5432:5432 \
+	-e POSTGRES_USER=$USER_NAME\
+	-e POSTGRES_PASSWORD=$PASSWORD\
+	-e POSTGRES_DB=$DBNAME\
+	-d postgres:latest
+
+if [ $? -eq 0 ]; then
+	echo "PostgreSQL container up success with db name '$DBNAME' "
+else
+	echo "Failed to create PostgreSQL container '$DBNAME' "
+fi
+
